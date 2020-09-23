@@ -16,22 +16,22 @@
       const Top = { template: '<div>Top</div>'}
       const User = { template: '<div>User</div>'}
 
-      const router = new VueRouter({
         // ルートの定義　配列で複数のルートを定義出来る
+      const router = new VueRouter({
         routes: [
           {
             path:'/top',
             component: Top
           },
           {
-            path:'/user',
+            path:'/users',
             component: User
           }
         ]
       })
 
-      const app = new Vue({
         // ルーターのインスタンスをVueのインスタンスへ渡す
+      const app = new Vue({
         // router: router
         router
       }).$mount('#app')
