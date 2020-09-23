@@ -8,8 +8,13 @@
     <div id="app">
       <router-link to="/top">Go to TOP</router-link>
       <router-link to="/users">Go to User</router-link>
+      <router-view></router-view>
     </div>
     <script src="https://unpkg.com/vue@2.6.10"></script>
     <script src="https://unpkg.com/vue-router@3.0.6"></script>
+    <script>
+      const Top = { template: '<div>Top</div>'}
+      const User = { template: '<div>User</div>'}
+    </script>
   </body>
 </html>
